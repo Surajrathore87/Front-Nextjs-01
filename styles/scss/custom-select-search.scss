@@ -1,0 +1,92 @@
+// .select-search {
+//   position: relative;
+//   &::after {
+//     content: "";
+//     display: inline-block;
+//     position: absolute;
+//     right: 1rem;
+//     top: 1.4rem;
+//     // border-top: 0.3em solid $label-color-5;
+//     // border-right: 0.3em solid transparent;
+//     // border-bottom: 0;
+//     // border-left: 0.3em solid transparent;
+//     // border: 0;
+//     // border-bottom: 2px solid black;
+//   }
+//   &.has-focus {
+//     &::after {
+//       content: unset;
+//     }
+//   }
+//   input {
+//     width: 100%;
+//     color: #666666 !important;
+//     position: relative;
+//     outline: 0;
+//     padding: 1rem 0.5rem;
+//     font-size: 1.25rem;
+//     border: 0;
+//     border-bottom: 2px solid black;
+//     background: transparent;
+//     // cursor: pointer;
+//   }
+// }
+
+.locator {
+  top: 30% !important;
+  right: 2% !important;
+}
+
+// .select-search__value::after {
+//   content: "";
+//   display: inline-block;
+//   position: absolute;
+//   top: calc(50% - 9px);
+//   right: 19px;
+//   width: 11px;
+//   height: 11px;
+// }
+
+// .select-search__select {
+//   width: 100%;
+//   position: absolute;
+//   box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
+//   z-index: 100;
+//   max-height: 300px;
+//   overflow-y: auto;
+//   background-color: white;
+// }
+
+// .select-search__options {
+//   list-style: none;
+//   padding: 0 10px;
+//   font-size: 20px;
+// }
+
+// .select-search__option,
+// .select-search__not-found {
+//   display: block;
+//   height: 36px;
+//   width: 100%;
+//   // padding: 0 16px;
+//   background: #fff;
+//   border: none;
+//   outline: none;
+//   font-size: 1.25rem;
+//   text-align: left;
+//   cursor: pointer;
+// }
+
+// .select-search--multiple {
+//   border-radius: 3px;
+//   overflow: hidden;
+// }
+// .select-search__option.is-selected,
+// .select-search__option.is-highlighted.is-selected {
+//   // background: $link-highlight-color;
+//   color: #fff;
+// }
+// .select-search__option:hover {
+//   background: #ecf6ff;
+//   // color: $link-highlight-color;
+// }

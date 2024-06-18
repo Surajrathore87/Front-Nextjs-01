@@ -1,0 +1,198 @@
+.plumber-banner {
+  background: linear-gradient(rgba(73, 109, 139, 0.7), rgba(73, 109, 139, 0.7)),
+    url("/images/plumber-banner.png") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480px;
+  margin-top: 70px;
+}
+.plumber-service {
+  @extend .font-proxima;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  transform: translateY(-5rem);
+  box-shadow: 0px 4px 14px rgba(173, 173, 183, 0.2);
+  .plumber-list {
+    .plumber-box {
+      border-radius: 8px;
+      .add-btn {
+        background: #0884ba !important;
+        border: 1px solid #0884ba !important;
+        border-radius: 2px;
+        transition: 0.2s all ease-in-out;
+        &:hover {
+          color: #0884ba !important;
+          background-color: #ffffff !important;
+        }
+      }
+    }
+  }
+  .confirm-booking-btn {
+    background-color: #0064a0;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #0064a0;
+    padding: 10px 60px;
+    font-size: 26px;
+    font-weight: 600;
+    transition: 0.3s;
+    &:hover {
+      color: #0064a0 !important;
+      background: white !important;
+      border-color: #0064a0 !important;
+    }
+  }
+}
+.plumber-cart-box {
+  border-radius: 15px;
+  border: 1px solid #d3d3d3;
+  .plumber-cart-body {
+    min-height: 300px;
+    max-height: 400px;
+    overflow: auto;
+    overflow-y: scroll;
+  }
+
+  .price-tag {
+    color: #fe9800 !important;
+  }
+  .plumber-cart-bottom {
+    .disable-proceed-btn {
+      border-radius: 0px 0px 15px 15px;
+      background: #535353;
+      border: 1px solid transparent !important;
+      transition: 0.3sq;
+      cursor: not-allowed;
+    }
+    .proceed-btn {
+      border-radius: 0px 0px 15px 15px;
+      background: #0884ba !important;
+      border: 1px solid #0884ba !important;
+      transition: 0.2s all ease-in-out;
+      &:hover {
+        color: #0884ba !important;
+        background-color: #ffffff !important;
+      }
+    }
+  }
+}
+.plumber-counter-button {
+  button {
+    background: #0884ba;
+    transition: 0.3s all ease-in-out;
+    border: 1px solid transparent !important;
+    color: white;
+    border-radius: 3px;
+    &:hover {
+      color: #0884ba !important;
+      background: white !important;
+      border-color: #0884ba !important;
+    }
+  }
+}
+.plumber-time-slot {
+  .date-box {
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: #969696;
+    cursor: pointer;
+    &:hover {
+      border-color: #0884ba;
+      background: #0884ba;
+      color: white;
+    }
+    &.active-date {
+      border-color: #0884ba;
+      background: #0884ba;
+      color: white;
+    }
+  }
+  .time-box {
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: #969696;
+    cursor: pointer;
+    &:hover {
+      border-color: #0884ba;
+      background: #0884ba;
+      color: white;
+    }
+    &.active-date {
+      border-color: #0884ba;
+      background: #0884ba;
+      color: white;
+    }
+  }
+  .add-address-box {
+    width: 350px;
+    cursor: pointer;
+    height: 150px;
+    border-radius: 12px !important;
+    border: 0.5px solid #0f2343;
+  }
+}
+
+.automatic-assigning-box {
+  border-radius: 13px !important;
+  background-color: #f5f5f5 !important;
+  .select-btn {
+    background: #0884ba;
+    border: 1px solid transparent;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      border-color: #0884ba;
+      background: white;
+      color: #0884ba;
+    }
+  }
+}
+.plumber-box {
+  border-radius: 5px;
+  border: 1px solid #eff0f1;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.03);
+  .select-btn {
+    border: 1px solid #0884ba;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0884ba;
+    cursor: pointer;
+    background: white;
+    &:hover {
+      background: #0884ba;
+      color: white;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .plumber-banner {
+    height: 380px;
+  }
+  .plumber-service {
+    .confirm-booking-btn {
+      padding: 8px 50px;
+      font-size: 20px !important;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .plumber-banner {
+    height: 280px;
+  }
+  .plumber-service {
+    .confirm-booking-btn {
+      padding: 8px 35px;
+      font-size: 18px !important;
+    }
+  }
+}

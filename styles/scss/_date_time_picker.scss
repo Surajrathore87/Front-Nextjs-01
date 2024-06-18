@@ -1,0 +1,60 @@
+.datepicker-toggle {
+  display: inline-block;
+  position: relative;
+  width: 215px;
+  height: 56px;
+  font-size: 19px;
+}
+
+.date-picker,
+.time-picker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 56px;
+  padding: 0px 9px;
+  padding-left: 45px;
+}
+
+.date-picker::-webkit-calendar-picker-indicator,
+.time-picker::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background-size: 20px;
+  background-image: url("../../public/images/calender.svg");
+}
+.time-picker::-webkit-calendar-picker-indicator {
+  width: 100%;
+  background-image: url("../../public/images/clock.svg");
+}
+
+@media (max-width: 1200px) {
+  .datepicker-toggle {
+    height: 56px;
+    .date-picker {
+      height: 100% !important;
+    }
+    .time-picker {
+      height: 100% !important;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .datepicker-toggle {
+    height: 45px !important;
+  }
+  .date-picker::-webkit-calendar-picker-indicator,
+  .time-picker::-webkit-calendar-picker-indicator {
+    top: 10px !important;
+  }
+}

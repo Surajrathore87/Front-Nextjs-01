@@ -1,0 +1,37 @@
+.confirm-booking {
+  @extend .font-sfpro;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  transform: translateY(-7.5rem);
+  box-shadow: 0px 4px 14px rgba(173, 173, 183, 0.2);
+
+  .outstation-vehicle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 500px;
+    height: 100px;
+    background-color: #f5f5f5;
+    color: #2b383e;
+    &.active {
+      background-color: #2b383e;
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .confirm-booking {
+    h1 {
+      font-size: 25px !important;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .confirm-booking {
+    h1 {
+      font-size: 20px !important;
+    }
+  }
+}

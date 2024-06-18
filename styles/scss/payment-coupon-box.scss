@@ -1,0 +1,119 @@
+.payment-method {
+  width: 400px;
+  padding: 15px 9px 15px 50px !important;
+  font-size: 19px;
+  z-index: 5;
+}
+.payment-box {
+  z-index: 5;
+  &::before {
+    width: 24px;
+    height: 21px;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 10;
+    left: 10px;
+    top: 20px;
+    background: url("../../public/images/payment.svg") no-repeat;
+  }
+}
+.coupon-input {
+  width: 400px;
+  padding: 15px 55px 15px 50px !important;
+  font-size: 19px;
+  z-index: 5;
+}
+.coupon-box {
+  z-index: 5;
+  &::before {
+    width: 30px;
+    height: 25px;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 10;
+    left: 10px;
+    top: 20px;
+    background: url("../../public/images/coupon.svg") no-repeat;
+  }
+  .apply-coupon {
+    position: absolute;
+    top: 18px;
+    z-index: 50;
+    right: 10px;
+    background: white;
+    color: $label-color-8;
+  }
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.payment-loader {
+  color: #0064a0;
+  animation-name: loader-animation;
+  font-size: 25px;
+  animation-duration: 0.8s;
+  position: absolute;
+  right: -2.5rem;
+  top: 1rem;
+  z-index: 10;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+// Amount Box
+
+@media (max-width: 1200px) {
+  .payment-method {
+    width: 300px !important;
+  }
+  .coupon-input {
+    width: 300px !important;
+  }
+  .total-amount-box {
+    h3 {
+      font-size: 25px !important;
+    }
+    p {
+      font-size: 28px !important;
+    }
+    .booking-ride-img {
+      img {
+        width: 70px !important;
+      }
+    }
+  }
+  .payment-loader {
+    font-size: 23px !important;
+    right: 0.2rem !important;
+    top: -2rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .payment-method {
+    width: 100% !important;
+  }
+  .coupon-input {
+    width: 100% !important;
+  }
+  .total-amount-box {
+    .booking-ride-img {
+      img {
+        width: 40px !important;
+      }
+    }
+    h3 {
+      font-size: 20px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+  }
+}

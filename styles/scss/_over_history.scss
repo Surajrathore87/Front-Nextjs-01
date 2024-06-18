@@ -1,0 +1,95 @@
+.my-order-tabbing {
+  .nav-tabs {
+    border: 0px !important;
+    margin-bottom: 3px !important;
+    .nav-item {
+      .nav-link {
+        width: 230px !important;
+        height: 67px !important;
+        border-radius: 0px !important;
+        border: 0px !important;
+        margin-right: 2px !important;
+        font-size: 20px !important;
+        font-family: "SF_Pro_Display";
+        font-weight: 500 !important;
+        background: #f3f3f3;
+        color: black;
+        border-bottom: 3px solid transparent !important;
+        &.active {
+          background: #309ad3;
+          color: white;
+          border-bottom: 3px solid #006aa4 !important;
+        }
+      }
+    }
+  }
+  .tab-content {
+    background: #f3f3f3;
+  }
+}
+.booking-summery {
+  width: 230px !important;
+  height: 67px !important;
+  background: #309ad3;
+  color: white;
+  border-bottom: 3px solid #006aa4 !important;
+}
+.booking-summery-box {
+  background: #f3f3f3;
+  .location-box {
+    position: relative;
+    ::before {
+      height: 56%;
+      border-left: 1px solid $label-color-3;
+      content: " ";
+      position: absolute;
+      top: 26px;
+      left: 7px;
+    }
+  }
+}
+.cancel-btn {
+  width: 235px;
+  height: 64px;
+  background: linear-gradient(1.21deg, #e73f3f -41.24%, #f74949 121.7%);
+  border-radius: 4px;
+  color: white;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid #f74949;
+    background: white;
+    color: #f74949;
+  }
+}
+
+@media (max-width: 1200px) {
+  .over-history-slider {
+    .slick-slider {
+      .slick-next {
+        width: 35px !important;
+        height: 35px !important;
+        background-size: 10px !important;
+        right: 10px;
+      }
+      .slick-prev {
+        width: 35px !important;
+        height: 35px !important;
+        background-size: 10px !important;
+        left: 10px;
+      }
+    }
+  }
+  .my-order-tabbing {
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          width: unset !important;
+          height: unset !important;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+}

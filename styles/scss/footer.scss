@@ -1,0 +1,42 @@
+.footer {
+  background-color: #002e5b;
+  @extend .font-sfpro;
+
+  .footer-border {
+    border-top: 2px solid #ffffff;
+  }
+  .footer-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-bottom: 50px;
+    background-color: #002e5b;
+    @extend .font-sfpro;
+    .logo-section {
+      img {
+        width: 150px;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .featured-service {
+      h2 {
+        color: #33a0ff;
+        font-size: 25px;
+      }
+      ul {
+        font-size: 17px !important;
+      }
+    }
+    .footer-icon {
+      border-radius: 100%;
+      font-size: 14px;
+    }
+  }
+}

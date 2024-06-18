@@ -1,0 +1,85 @@
+.checkout-module {
+  .checkout-heading {
+    background: #309ad3;
+    border-bottom: 3px solid #006aa4 !important;
+  }
+  input {
+    border-radius: 5px;
+    &:focus {
+      outline: none !important;
+    }
+    &:focus-visible {
+      box-shadow: none !important;
+    }
+  }
+  textarea {
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    &:focus {
+      outline: none !important;
+    }
+    &:focus-visible {
+      box-shadow: none !important;
+    }
+  }
+  .leave-tip-box {
+    label {
+      width: 55px;
+      height: 55px;
+      border-radius: 4px 0px 0px 4px;
+      background: #4bcff9;
+    }
+    input {
+      width: 240px;
+      height: 55px;
+      border-radius: 0px 4px 4px 0px;
+    }
+  }
+  .form-check-input {
+    &:checked {
+      background-color: #4bcff9 !important;
+      border-color: #4bcff9 !important;
+    }
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  .continue-shopping-btn {
+    background: #535353;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    &:hover {
+      background: white;
+      color: #535353;
+      border: 1px solid #535353;
+    }
+  }
+  .place-order-btn {
+    background: #0064a0;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    &:hover {
+      background: white;
+      color: #0064a0;
+      border: 1px solid #0064a0;
+    }
+  }
+  .input-box {
+    width: 100%;
+    color: #666666 !important;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .checkout-module {
+    .checkout-heading {
+      h2 {
+        font-size: 20px !important;
+      }
+    }
+  }
+}
